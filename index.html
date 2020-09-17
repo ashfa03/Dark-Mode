@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="section">
+        <h1>Light / Dark Mode</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae eveniet! Suscipit libero
+            explicabo cum, voluptatum voluptatibus dolores tempore beatae saepe ullam. Aliquam eum rerum itaque beatae
+            aut exercitationem esse.
+            <div class="theme-switch">
+                <div class="switch"></div>
+            </div>
+        </p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(".theme-switch").on("click", () => {
+            $("body").toggleClass("light-theme");
+            $("div.section").toggleClass("light-color");
+        })
+    </script>
+</body>
+
+</html>
